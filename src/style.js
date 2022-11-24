@@ -12,9 +12,11 @@ const styles = {
     padding: "sm:px-16 px-6 sm:py-12 py-4",
   
     marginX: "sm:mx-16 mx-6",
-    marginY: "sm:my-16 my-6",
+    marginY: "sm:my-6 my-6",
 
     hoverText : "transitio-all duration-900 ease-in hover:underline hover:underline-offset-4 ",
+
+    hoverColor:"hover:bg-green-300 hover:text-white",
 
   };
   

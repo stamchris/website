@@ -4,8 +4,8 @@ import styles from './style';
 import { Navbar,Main } from './components';
 
 const App = () => (
-    <div className="w-full bg-slate-50">
-      <div className={`${styles.paddingX} ${styles.flexCenter} pb-5 bg-gradient-to-b from-slate-50`}>
+    <div className="w-full">
+      <div className={`${styles.paddingX} ${styles.flexCenter} bg-white`}>
         <div className={`${styles.boxWidth} `}>
           <Navbar/> 
         </div>
