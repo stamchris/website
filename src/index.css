@@ -57,6 +57,10 @@
     );
   }
   
+  .bg-main {
+    background: linear-gradient(120deg, rgba(37,149,79,0.9079665492957747) 0%, rgba(134,239,172,1) 65%, rgba(102,177,129,0.9276848591549296) 85%);
+  }
+
   .bg-black-gradient-2 {
     background: linear-gradient(
       -168.39deg,
