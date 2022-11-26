@@ -6,9 +6,9 @@ const Main = () => (
 		<section id='home' className={`${styles.marginY}`}>
 			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-wrap flex-col sm:flex-row bg-main sm:mx-6 rounded:md sm:rounded-xl`}>
 
-				<div className='flex-1 flex-col h-full'>
-					<div className=''>
-						<h1 className=' font-noto font-bold leading-wide tracking-wide text-3xl text-white sm:text-4xl text-center sm:text-left
+				<div className='flex-1 flex-col'>
+					<div className='md:h-[130px]'>
+						<h1 className=' font-noto font-bold leading-tight md:leading-11 tracking-wide text-3xl text-white md:text-5xl text-center sm:text-left md:h-full
 						'>Η εφαρμογή για να βρίσκεις ματς 5x5
 						</h1>
 					</div>	

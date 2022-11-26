@@ -16,6 +16,11 @@ module.exports = {
       fontFamily: {
         noto: ["Noto Sans", "sans-serif"],
       },
+      lineHeight: {
+        'extra-loose': '3',
+        '11' : '4rem',
+        '12': '5rem',
+      }
     },
     screens: {
       xs: "480px",
