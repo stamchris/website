@@ -46,10 +46,10 @@ const ImageSlider = () => {
 			</div>
       	</div>
 
-		<div id = 'bullets' className={`absolute bottom-0 flex flex-row gap-2 cursor-pointer ${isHovered ? 'visible' : 'invisible'}`}>
+		<div id = 'bullets' className={`absolute bottom-0 flex flex-row gap-2 cursor-pointer`}>
 		  {slides.map((slide, slideIndex) => (
 			<div
-			  className=" text-white/[.7]"
+			  className=" text-white/[.7] text-sm"
 			  key={slideIndex}
 			  onClick={() => goToSlide(slideIndex)}
 			>

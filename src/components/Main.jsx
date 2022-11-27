@@ -5,7 +5,7 @@ import ImageSlider from './ImageSlider';
 
 const Main = () => (
 		<section id='home' className={`${styles.marginY}`}>
-			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-wrap flex-col sm:flex-row bg-main mx-1 sm:mx-6 rounded:md sm:rounded-xl`}>
+			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-br from-emerald-700 via-emerald-500 to-emerald-300 rounded:md sm:rounded-md`}>
 
 				<div className={`flex-1 flex-col`}>
 					<div className='md:h-[130px]'>

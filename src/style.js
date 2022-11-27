@@ -16,7 +16,7 @@ const styles = {
 
     hoverText : "transitio-all duration-900 ease-in hover:underline hover:underline-offset-4 ",
 
-    hoverColor:"hover:bg-green-300 hover:text-white",
+    hoverColor:"hover:bg-emerald-500 hover:text-white",
 
   };
   
