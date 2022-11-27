@@ -1,19 +1,24 @@
 import React from 'react';
 import styles from '../style';
-import {foot1,foot2,google,apple} from '../assets';
+import {google,apple} from '../assets';
+import ImageSlider from './ImageSlider';
 
 const Main = () => (
 		<section id='home' className={`${styles.marginY}`}>
-			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-wrap flex-col sm:flex-row bg-main sm:mx-6 rounded:md sm:rounded-xl`}>
+			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-wrap flex-col sm:flex-row bg-main mx-1 sm:mx-6 rounded:md sm:rounded-xl`}>
 
-				<div className='flex-1 flex-col'>
+				<div className={`flex-1 flex-col`}>
 					<div className='md:h-[130px]'>
 						<h1 className=' font-noto font-bold leading-tight md:leading-11 tracking-wide text-3xl text-white md:text-5xl text-center sm:text-left md:h-full
 						'>Η εφαρμογή για να βρίσκεις ματς 5x5
 						</h1>
 					</div>	
-					<div className='p-2 md:p-4 mt-6 bg-white rounded-xl'>
-						<h2 className='font-noto text-bold sm:text-lg leading-normal tracking-wide text-green-500 text-center '> Με ένα κλικ βρισκεις απευθείας γήπεδο εσύ και η παρέα σου 
+					<div className='md:p-4 mt-6'>
+						<h2 className='font-noto text-bold sm:text-lg leading-normal tracking-wide text-slate-50 text-center '> Με ένα κλικ βρισκεις 
+							<span className='underline underline-offset-8 decoration-2 mx-2'>
+								απευθείας
+							</span> 
+						γήπεδο εσύ και η παρέα σου 
 						</h2>
 					</div>
 					<div className='pt-10 flex justify-center sm:justify-start'>
@@ -30,8 +35,7 @@ const Main = () => (
 				</div>
 
 				<div className='py-12 sm:py-2 md:py-0 sm:ml-10 md:ml-20'>
-					<img src={foot2} alt="football image" className='w-[300px] h-[450px] rounded-md drop-shadow-md sm:w-[300px] sm:h-[450px] md:w-[400px] md:h-[550px]'
-					/>   
+						<ImageSlider/>
 				</div>
 			</div>
 		</section>
