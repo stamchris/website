@@ -3,9 +3,9 @@ import styles from '../style';
 import {google,apple} from '../assets';
 import ImageSlider from './ImageSlider';
 
-const Main = () => (
+const Hero = () => (
 		<section id='home' className={`${styles.marginY}`}>
-			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-br from-emerald-700 via-emerald-500 to-emerald-300 rounded:md sm:rounded-md`}>
+			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-br from-emerald-700 via-emerald-400 to-emerald-700 rounded:lg  sm:rounded-md`}>
 
 				<div className={`flex-1 flex-col`}>
 					<div className='md:h-[130px]'>
@@ -41,4 +41,4 @@ const Main = () => (
 		</section>
 	)
 
-export default Main
+export default Hero

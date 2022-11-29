@@ -22,7 +22,7 @@ const Navbar = () => {
 					<a className={`p-5 rounded-lg ${styles.hoverColor}`} href={`#${nav.id}`}>
 						{nav.title}
 					</a>
-				</li>                
+				</li>              
 			))}
 		</ul>
 

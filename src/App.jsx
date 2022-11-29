@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './style';
 
-import { Navbar,Main } from './components';
+import { Navbar,Hero,Illustration } from './components';
 
 const App = () => (
     <div className="w-full">
-      <div className={`${styles.paddingX} ${styles.flexCenter} bg-white`}>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth} `}>
           <Navbar/> 
         </div>
@@ -13,7 +13,13 @@ const App = () => (
 
     <div className={`${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <Main/>
+        <Hero/>
+      </div>
+    </div>
+
+    <div className={`${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Illustration/>
       </div>
     </div>
 

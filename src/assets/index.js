@@ -6,9 +6,6 @@ import foot2 from "./footballMain.jpg";
 import foot3 from "./football3.jpg";
 import google from "./google-play.png";
 import apple from "./app-store.png";
-import illustration_2 from "./illustration-analytics.png";
-import illustration_football from "./football-illustration.png";
-import illustration_payment from "./payment-illustration.png";
 
 
 export {
@@ -20,7 +17,4 @@ export {
     foot3,
     google,
     apple,
-    illustration_2,
-    illustration_football,
-    illustration_payment
 };
