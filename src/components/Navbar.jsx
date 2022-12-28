@@ -12,7 +12,7 @@ const Navbar = () => {
 		<img src={logo} alt="Company Logo" className='w-[60px] h-[50px] '/>
 		<h4 className='text-[20px] text-zinc-700 font-semibold'>Meet N Kick</h4>
 
-		<ul className={`list-none hidden sm:flex justify-end items-center flex-1 gap-6 `}>
+		<ul className={`list-none hidden md:flex justify-end items-center flex-1 gap-6 `}>
 			{navLinks.map((nav, index) => (
 				<li
 					key={nav.id}
@@ -26,7 +26,7 @@ const Navbar = () => {
 			))}
 		</ul>
 
-		<div className='sm:hidden flex flex-1 justify-end items-center'>
+		<div className='md:hidden flex flex-1 justify-end items-center'>
 			<img	
 				src={toggle ? close : menu} 
 				alt="menu"
