@@ -11,11 +11,11 @@ const Illustration = () =>(
                     <img src={`/src/assets/illustration_${index+1}.png`} alt="illustration"
                     className='h-45 w-45 md:h-36 md:w-36'
                     />
-                    <h1 className='text-emerald-500 text-4xl text-center text-bold p-4 my-4 rounded-lg md:text-2xl md:min-h-[90px]'>
+                    <h1 className='text-emerald-500 text-2xl text-center text-bold p-4 my-4 rounded-lg md:text-3xl md:min-h-[90px]'>
                             {item.title}
                     </h1>
                     <p
-                        className='text-md py-3 px-1 my-4 border-l-4 border-emerald-400 text-gray-700 md:text-md '
+                        className='text-sm py-3 px-1 my-4 border-l-4 border-emerald-400 text-gray-700 md:text-md '
                     >
                         {item.desc}
                     </p>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style';
 
-import { Navbar,Hero,Illustration } from './components';
+import { Navbar,Hero,Illustration,Faq } from './components';
 
 const App = () => (
 		<div className="w-full bg-slate-100">
@@ -21,6 +21,12 @@ const App = () => (
 			<div className={`${styles.flexStart}`}>
 				<div className={`${styles.boxWidth}`}>
 					<Illustration/>
+				</div>
+			</div>
+
+			<div className={`${styles.flexStart}`}>
+				<div className={`${styles.boxWidth}`}>
+					<Faq/>
 				</div>
 			</div>
 
