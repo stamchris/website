@@ -1,5 +1,3 @@
-import { illu1 } from "../assets";
-
 
 export const navLinks = [
     {

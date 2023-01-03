@@ -1,6 +1,5 @@
 import styles from '../style';
 import { productItems} from '../constants'
-import {illu1,illu2,illu3} from '../assets';
 
 const Illustration = () =>(
 
@@ -11,7 +10,7 @@ const Illustration = () =>(
                     <img src={`${item.img}`} alt="illustration"
                     className='h-45 w-45 md:h-36 md:w-36'
                     />
-                    <h1 className='text-emerald-500 text-2xl text-center text-bold p-4 my-4 rounded-lg md:text-3xl md:min-h-[90px]'>
+                    <h1 className='text-emerald-500 text-2xl text-center text-bold p-4 my-4 rounded-lg md:text-3xl md:min-h-[140px]'>
                             {item.title}
                     </h1>
                     <p

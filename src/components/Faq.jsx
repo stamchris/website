@@ -22,16 +22,16 @@ const Faq = () => {
         <section 
         className="flex flex-col"
         >
-            <h1 className='text-5xl text-gray-800 m-4 p-2 font-mono text-center'
+            <h1 className='text-5xl text-gray-700 m-4 p-2 font-mono text-center tracking-wide underline underline-offset-8 decoration-emerald-400'
             >FAQ
             </h1>
             {
                 faqList.map((item) => (
                     <div key={item.id} className='flex flex-col'>
-                        <div className='flex-1 flex flew-row justify-center items-center h-24 w-fit p-5 m-2 bg-gradient-to-b from-gray-200 via-gray-50 to-gray-200 cursor-pointer rounded-[10px] drop-shadow-md' key={item.id} 
+                        <div className='flex-1 flex flew-row justify-center items-center h-24 w-fit p-5 m-4 cursor-pointer rounded-[10px] bg-white drop-shadow-md' key={item.id} 
                         onClick = {() => {handleClick(item.id)}} >
 
-                            <h1 className='text-lg '>
+                            <h1 className='text-base md:text-xl font-serif text-gray-700'>
                                 {item.question}
                             </h1>
                             <img src={arrow} alt="arrow up" 
@@ -40,7 +40,7 @@ const Faq = () => {
                             
                         </div>
 
-                        <div className={`${item.active ? 'block' : 'hidden'} justify-center items-center flex-1 h-24 w-fit bg-gray-50 p-4 m-1 rounded-[10px] border-l-8 border-emerald-400 text-gray-800`}>
+                        <div className={`${item.active ? 'block' : 'hidden'} justify-center items-center flex-1 h-24 w-fit ml-4 bg-gray-50 p-4 m-1 rounded border-l-8 border-emerald-400 text-sm md:text-base text-gray-800 bg-white drop-shadow-md`}>
                             {item.answer}
                         </div>
                     </div>

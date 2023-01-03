@@ -7,9 +7,8 @@ import foot3 from "./football3.jpg";
 import google from "./google-play.png";
 import apple from "./app-store.png";
 import arrow from "./arrow_up.png";
-import illu1 from "./illustration_1.png";
-import illu2 from "./illustration_2.png";
-import illu3 from "./illustration_3.png";
+
+
 
 
 export {
@@ -22,7 +21,4 @@ export {
     google,
     apple,
     arrow,
-    illu1,
-    illu2,
-    illu3,
 };
