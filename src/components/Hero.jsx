@@ -15,7 +15,7 @@ const Hero = () => (
 					</div>	
 					<div className='mt-6 px-8 py-4 md:py-4 sm:px-0'>
 						<h2 className='font-sans text-center sm:text-left sm:text-2xl font-light leading-normal tracking-wide text-gray-800 '> Με ένα κλικ βρισκεις 
-							<span className='underline underline-offset-8 decoration-2 mx-2'>
+							<span className='underline underline-offset-8 decoration-2 decoration-emerald-400 mx-2'>
 								απευθείας
 							</span> 
 						γήπεδο εσύ και η παρέα σου 
@@ -23,7 +23,7 @@ const Hero = () => (
 					</div>
 					<div className='pt-10 flex justify-center sm:justify-start'>
 						<h3 className='font-sans sm:text-xl leading-normal tracking-normal text-md text-gray-800 '>
-							<span className='text-green-500 rounded-xl pr-1.5 mr-1 bg-font-bold text-md sm:mr-2'> Κατέβασε 
+							<span className='text-emerald-400 rounded-xl pr-1.5 mr-1 font-medium text-md sm:mr-2'> Κατέβασε 
 							</span>  
 						την εφαρμογή τώρα 
 						</h3>
