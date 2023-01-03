@@ -4,7 +4,7 @@ import {google,apple} from '../assets';
 import ImageSlider from './ImageSlider';
 
 const Hero = () => (
-		<section id='home' className={`${styles.marginY}`}>
+		<section id='home' className={`${styles.marginYHero}`}>
 			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50 rounded:lg  sm:rounded-md`}>
 
 				<div className={`flex-1 flex-col`}>
@@ -23,7 +23,7 @@ const Hero = () => (
 					</div>
 					<div className='pt-10 flex justify-center sm:justify-start'>
 						<h3 className='font-sans sm:text-xl leading-normal tracking-normal text-md text-gray-800 '>
-							<span className='text-emerald-400 rounded-xl pr-1.5 mr-1 font-medium text-md sm:mr-2'> Κατέβασε 
+							<span className='text-emerald-400 rounded pr-1.5 mr-1 font-medium text-md sm:mr-2'> Κατέβασε 
 							</span>  
 						την εφαρμογή τώρα 
 						</h3>

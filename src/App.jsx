@@ -6,7 +6,7 @@ import { Navbar,Hero,Illustration,Faq } from './components';
 const App = () => (
 		<div className="w-full bg-slate-100">
 
-			<div className={`${styles.paddingX} ${styles.flexCenter}`}>
+			<div className={`${styles.paddingXNav} ${styles.flexCenter}`}>
 				<div className={`${styles.boxWidth} `}>
 					<Navbar/> 
 				</div>

@@ -28,7 +28,7 @@ const ImageSlider = () => {
 	};
 
 	return (
-	  <div className="flex justify-center items-center relative"
+	  <div className="flex justify-center items-center relative z-0"
 			onMouseEnter={()=>setIsHovered(true)}	
 			onMouseLeave={()=>setIsHovered(false)}
 	  >

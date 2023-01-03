@@ -8,11 +8,13 @@ const styles = {
     flexStart: "flex justify-center items-start",
   
     paddingX: "sm:px-8 px-2",
+    paddingXNav: "sm:pr-8 pr-2",
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-6 sm:py-12 py-4",
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-6 my-6",
+    marginYHero: "sm:mb-6 mb-6",
 
     hoverText : "transitio-all duration-900 ease-in hover:underline hover:underline-offset-4 ",
 
