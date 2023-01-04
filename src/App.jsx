@@ -11,8 +11,8 @@ const App = () => {
 	return (
 		<div className="w-full bg-slate-100">
 
-			<div className={`${styles.paddingXNav} ${styles.flexCenter}`}>
-				<div className={`${styles.boxWidth} `}>
+			<div className={`${styles.flexCenter} bg-slate-50 rounded`}>
+				<div className={`${styles.boxWidth}`}>
 					<Navbar toggle={toggle} setToggle={setToggle}/> 
 				</div>
 			</div>

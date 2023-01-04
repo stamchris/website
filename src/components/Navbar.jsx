@@ -8,7 +8,7 @@ const Navbar = ({toggle,setToggle}) => {
 	
 
   return (
-	<nav className='w-full flex py-2 justify-between items-center navbar '>
+	<nav className='w-full flex py-2 justify-between items-center navbar'>
 		<img src={logo} alt="Company Logo" className='w-[90px] h-[70px] sm:w-[120px] sm:h-[100px]'/>
 		<h4 className='text-[15px] sm:text-[20px] text-zinc-700 font-semibold'>Meet N Kick</h4>
 
@@ -30,12 +30,12 @@ const Navbar = ({toggle,setToggle}) => {
 			<img	
 				src={toggle ? close : menu} 
 				alt="menu"
-				className='w-[28px] h-[28px] object-contain mr-1' 
+				className='w-[28px] h-[28px] object-contain mr-4' 
 				onClick={() => setToggle((prev) => !prev)}
 			/>
 
 			<div
-				className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-b from-gray-300 via-gray-200 to-gray-200 opacity-75 z-10 absolute top-20 right-0 mx-4 my-2 min-w-[140px] h-[300px] w-[300px] rounded-xl sidebar`}
+				className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-b from-gray-300 via-gray-200 to-gray-200 opacity-75 z-50 absolute top-20 right-0 mx-4 my-2 min-w-[140px] h-[300px] w-[300px] rounded-xl sidebar`}
 				>
 				<ul className='list-none flex flex-col justify-center items-center flex-1'>
 					{navLinks.map((nav, index) => (
