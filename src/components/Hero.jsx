@@ -3,9 +3,11 @@ import styles from '../style';
 import {google,apple} from '../assets';
 import ImageSlider from './ImageSlider';
 
-const Hero = () => (
+const Hero = ({toggle,setToggle}) => {
+
+	return (
 		<section id='home' className={`${styles.marginYHero}`}>
-			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50 rounded:lg  sm:rounded-md`}>
+			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50 ${toggle ? 'blur-sm' : 'blur-none'} rounded:lg  sm:rounded-md`}>
 
 				<div className={`flex-1 flex-col`}>
 					<div className='md:h-[130px]'>
@@ -40,5 +42,6 @@ const Hero = () => (
 			</div>
 		</section>
 	)
+}
 
 export default Hero

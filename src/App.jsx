@@ -1,20 +1,25 @@
 import React from 'react'
 import styles from './style';
+import {useState} from 'react'
 
 import { Navbar,Hero,Illustration,Faq } from './components';
 
-const App = () => (
+const App = () => {
+
+	const [toggle, setToggle] = useState(false);
+
+	return (
 		<div className="w-full bg-slate-100">
 
 			<div className={`${styles.paddingXNav} ${styles.flexCenter}`}>
 				<div className={`${styles.boxWidth} `}>
-					<Navbar/> 
+					<Navbar toggle={toggle} setToggle={setToggle}/> 
 				</div>
 			</div>
 
 			<div className={`${styles.flexStart}`}>
 				<div className={`${styles.boxWidth}`}>
-					<Hero/>
+					<Hero toggle={toggle} setToggle={setToggle}/>
 				</div>
 			 </div>
 
@@ -36,6 +41,6 @@ const App = () => (
 
 		</div>
 		
-)
+)}
 
 export default App;
