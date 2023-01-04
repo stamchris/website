@@ -31,8 +31,14 @@ const Hero = ({toggle,setToggle}) => {
 						</h3>
 					</div>
 					<div className='flex flex-row pt-8 px-4 gap-20 justify-center items-center h-30 sm:justify-start'>
-						<img src={google} alt="android store" className='h-[80px] w-[80px]' />
-						<img src={apple} alt="appstore" className='h-[80px] w-[80px]'/>
+						<a href='https://play.google.com/store/apps/details?id=meet.n.kick'>
+							<img src={google} alt="android store" className='h-[80px] w-[80px]'
+							/>
+						</a>
+						<a href='https://apps.apple.com/gr/app/meet-n-kick/id6444569617'>
+							<img src={apple} alt="appstore" className='h-[80px] w-[80px]'/>
+						</a>
+						
 					</div>
 				</div>
 

@@ -7,6 +7,9 @@ import foot3 from "./football3.jpg";
 import google from "./google-play.png";
 import apple from "./app-store.png";
 import arrow from "./arrow_up.png";
+import app1 from "./app1.png";
+import app2 from "./app2.png";
+import app3 from "./app3.png"
 
 
 
@@ -21,4 +24,7 @@ export {
     google,
     apple,
     arrow,
+    app1,
+    app2,
+    app3,
 };
