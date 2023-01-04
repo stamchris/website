@@ -38,11 +38,11 @@ const ImageSlider = () => {
 				/>
 
 				<div 
-					className=" absolute bottom-[-20] w-[300px] h-[500px] md:w-[400px] md:h-[600px] bg-white opacity-40 z-10 rounded-lg ">
+					className=" absolute bottom-[-20] w-[250px] h-[400px] md:w-[320px] md:h-[580px] bg-gradient-to-b from-emerald-200 via-emerald-100 to-emerald-200 opacity-30 z-10 rounded-lg ">
 				</div>
 
 
-				<div id = 'arrows' className={`flex flex-row absolute top-50 w-[250px] md:w-[300px] cursor-pointer ${isHovered ? 'visible' : 'invisible'}`}>
+				<div id = 'arrows' className={`flex flex-row absolute top-50 w-[250px] md:w-[300px] cursor-pointer ${isHovered ? 'visible' : 'invisible'} z-20`}>
 					<div onClick={goToPrevious} className='text-gray text-3xl flex-1 place-self-start'>
 					❰
 					</div>
@@ -51,10 +51,10 @@ const ImageSlider = () => {
 					</div>
 				</div>
 
-				<div id = 'bullets' className={`absolute bottom-0 flex flex-row gap-2 cursor-pointer`}>
+				<div id = 'bullets' className={`absolute bottom-0 flex flex-row gap-2 cursor-pointer z-20`}>
 				{slides.map((slide, slideIndex) => (
 					<div
-					className=" text-white/[.7] text-sm"
+					className=" text-slate-100 text-sm"
 					key={slideIndex}
 					onClick={() => goToSlide(slideIndex)}
 					>
