@@ -1,4 +1,5 @@
 import logo from "./logo.png";
+import black_logo from "./logo.jpg";
 import close from "./close.png";
 import menu  from "./menu.png"; 
 import foot1 from "./football1.jpg";
@@ -16,6 +17,7 @@ import app3 from "./app3.png"
 
 export {
     logo,
+    black_logo,
     close,
     menu,
     foot1,

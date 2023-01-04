@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-import {logo,close,menu} from '../assets'
+import {logo,close,menu,black_logo} from '../assets'
 import { navLinks } from '../constants';
 import styles from '../style'
 
@@ -9,7 +9,7 @@ const Navbar = ({toggle,setToggle}) => {
 
   return (
 	<nav className='w-full flex py-2 justify-between items-center navbar'>
-		<img src={logo} alt="Company Logo" className='w-[90px] h-[70px] sm:w-[120px] sm:h-[100px]'/>
+		<img src={black_logo} alt="Company Logo" className='w-[90px] h-[70px] sm:w-[120px] sm:h-[100px] rounded m-2 '/>
 		<h4 className='text-[15px] sm:text-[20px] text-zinc-700 font-semibold'>Meet N Kick</h4>
 
 		<ul className={`list-none hidden md:flex justify-end items-center flex-1 gap-6 `}>

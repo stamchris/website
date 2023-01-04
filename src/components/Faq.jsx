@@ -19,7 +19,7 @@ const Faq = () => {
     }
 
     return (
-        <section 
+        <section id='faq'
         className="flex flex-col"
         >
             <h1 className='text-5xl text-gray-700 m-4 p-2 font-mono text-center tracking-wide underline underline-offset-8 decoration-emerald-400'

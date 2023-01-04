@@ -9,7 +9,7 @@ const App = () => {
 	const [toggle, setToggle] = useState(false);
 
 	return (
-		<div className="w-full bg-slate-100">
+		<div className="w-full bg-slate-100 ">
 
 			<div className={`${styles.flexCenter} bg-slate-50 rounded`}>
 				<div className={`${styles.boxWidth}`}>
@@ -25,7 +25,7 @@ const App = () => {
 
 			<div className={`${styles.flexStart}`}>
 				<div className={`${styles.boxWidth}`}>
-					<Illustration/>
+					<Illustration toggle={toggle} setToggle={setToggle}/>
 				</div>
 			</div>
 

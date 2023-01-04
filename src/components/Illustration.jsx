@@ -1,12 +1,12 @@
 import styles from '../style';
 import { productItems} from '../constants'
 
-const Illustration = () =>(
+const Illustration = ({toggle,setToggle}) =>(
 
-        <section className='flex flex-col w-full md:h-[600px] justify-center items-center md:flex-row'>
+        <section id='product' className={`flex flex-col w-full md:h-[600px] justify-center items-center md:flex-row ${toggle ? 'blur-sm' : 'blur-none'}`}>
 
             {productItems.map((item,index) =>(
-                <div className='flex-1 flex flex-col p-4 w-full h-full bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50 m-2 justify-start items-center drop-shadow-sm rounded-lg ' key={index}>
+                <div className='flex-1 flex flex-col p-4 w-full h-[500px] bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50 m-2 justify-start items-center drop-shadow-sm rounded-lg ' key={index}>
                     <img src={`${item.img}`} alt="illustration"
                     className='h-45 w-45 md:h-36 md:w-36'
                     />
