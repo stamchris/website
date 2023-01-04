@@ -43,10 +43,10 @@ const ImageSlider = () => {
 
 
 				<div id = 'arrows' className={`flex flex-row absolute top-50 w-[250px] md:w-[300px] cursor-pointer ${isHovered ? 'visible' : 'invisible'} z-20`}>
-					<div onClick={goToPrevious} className='text-gray text-3xl flex-1 place-self-start'>
+					<div onClick={goToPrevious} className='text-emerald-500 text-3xl flex-1 place-self-start'>
 					❰
 					</div>
-					<div onClick={goToNext} className='text-gray text-3xl place-self-end'>
+					<div onClick={goToNext} className='text-emerald-500 text-3xl place-self-end'>
 					❱
 					</div>
 				</div>
@@ -54,7 +54,7 @@ const ImageSlider = () => {
 				<div id = 'bullets' className={`absolute bottom-0 flex flex-row gap-2 cursor-pointer z-20`}>
 				{slides.map((slide, slideIndex) => (
 					<div
-					className=" text-slate-100 text-sm"
+					className=" text-emerald-500 text-sm"
 					key={slideIndex}
 					onClick={() => goToSlide(slideIndex)}
 					>
