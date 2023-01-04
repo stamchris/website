@@ -35,13 +35,13 @@ const Navbar = ({toggle,setToggle}) => {
 			/>
 
 			<div
-				className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-b from-gray-300 via-gray-200 to-gray-200 opacity-75 z-50 absolute top-20 right-0 mx-4 my-2 min-w-[140px] h-[300px] w-[300px] rounded-xl sidebar`}
+				className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-b from-gray-300 via-gray-200 to-gray-200 opacity-90 z-50 absolute top-20 right-0 mx-4 my-2 min-w-[140px] h-[300px] w-[300px] rounded-xl sidebar`}
 				>
 				<ul className='list-none flex flex-col justify-center items-center flex-1'>
 					{navLinks.map((nav, index) => (
 						<li
 							key={nav.id}
-							className={`font-noto cursor-pointer text-[16px] ${index === navLinks.length - 1 ? `mb-0 `: `mb-6`} text-gray-700 hover:underline hover:underline-offset-4 decoration-emerald-400 decoration-2
+							className={`font-noto cursor-pointer text-[16px] font-bold ${index === navLinks.length - 1 ? `mb-0 `: `mb-6`} text-gray-700 hover:underline hover:underline-offset-4 decoration-emerald-400 decoration-2
 							`}
 						>
 							<a href={`#${nav.id}`}>
