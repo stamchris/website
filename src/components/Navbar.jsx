@@ -1,4 +1,4 @@
-import {useState,useRef} from 'react'
+import {useState} from 'react'
 
 import {logo,close,menu,black_logo} from '../assets'
 import { navLinks } from '../constants';
@@ -7,6 +7,11 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
 
 
 const Navbar = ({toggle,setToggle,body}) => {
+
+	const toggleHandler = (setToggle) => {
+		toggle ? enableBodyScroll(body.current) : disableBodyScroll(body.current);setToggle((prev) => !prev);
+	}
+
 
   return (
 	<nav className='w-full flex py-2 justify-between items-center navbar'>
@@ -32,7 +37,7 @@ const Navbar = ({toggle,setToggle,body}) => {
 				src={toggle ? close : menu} 
 				alt="menu"
 				className='w-[28px] h-[28px] object-contain mr-4' 
-				onClick={() =>{toggle ? enableBodyScroll(body.current) : disableBodyScroll(body.current);setToggle((prev) => !prev);}}
+				onClick={() => toggleHandler(setToggle)}
 			/>
 
 			<div
@@ -45,7 +50,7 @@ const Navbar = ({toggle,setToggle,body}) => {
 							className={`font-noto cursor-pointer text-[16px] font-bold ${index === navLinks.length - 1 ? `mb-0 `: `mb-6`} text-gray-700 hover:underline focus:underline hover:underline-offset-4 decoration-emerald-400 decoration-2
 							`}
 						>
-							<a href={`#${nav.id}`}>
+							<a href={`#${nav.id}`} onClick={() =>toggleHandler(setToggle)}>
 								{nav.title}
 							</a>
 						</li>                
