@@ -1,35 +1,40 @@
 import React from 'react'
 import styles from './style';
-import {useState} from 'react'
+import {useState,useRef} from 'react'
 
 import { Navbar,Hero,Illustration,Faq } from './components';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const App = () => {
 
+	// toggle menu 
 	const [toggle, setToggle] = useState(false);
 
-	return (
-		<div className="w-full bg-slate-100 ">
+	const bodyRef = useRef(false)
 
-			<div className={`${styles.flexCenter} bg-slate-50 rounded`}>
-				<div className={`${styles.boxWidth}`}>
-					<Navbar toggle={toggle} setToggle={setToggle}/> 
+
+	return (
+		<div ref={bodyRef} className={`w-full bg-slate-100 `}>
+
+			<div className={`${styles.flexCenter} bg-slate-50 rounded `}>
+				<div className={`${styles.boxWidth} `}>
+					<Navbar toggle={toggle} setToggle={setToggle} body={bodyRef}/> 
 				</div>
 			</div>
 
-			<div className={`${styles.flexStart}`}>
-				<div className={`${styles.boxWidth}`}>
+			<div className={`${styles.flexStart} ${toggle ? 'blur-sm' : 'blur-none'}`}>
+				<div className={`${styles.boxWidth}`} >
 					<Hero toggle={toggle} setToggle={setToggle}/>
 				</div>
 			 </div>
 
-			<div className={`${styles.flexStart}`}>
+			<div className={`${styles.flexStart} ${toggle ? 'blur-sm' : 'blur-none'}`}>
 				<div className={`${styles.boxWidth}`}>
 					<Illustration toggle={toggle} setToggle={setToggle}/>
 				</div>
 			</div>
 
-			<div className={`${styles.flexStart}`}>
+			<div className={`${styles.flexStart} ${toggle ? 'blur-sm' : 'blur-none'}`}>
 				<div className={`${styles.boxWidth}`}>
 					<Faq/>
 				</div>

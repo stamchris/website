@@ -1,11 +1,12 @@
-import {useState} from 'react'
+import {useState,useRef} from 'react'
 
 import {logo,close,menu,black_logo} from '../assets'
 import { navLinks } from '../constants';
 import styles from '../style'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-const Navbar = ({toggle,setToggle}) => {
-	
+
+const Navbar = ({toggle,setToggle,body}) => {
 
   return (
 	<nav className='w-full flex py-2 justify-between items-center navbar'>
@@ -31,7 +32,7 @@ const Navbar = ({toggle,setToggle}) => {
 				src={toggle ? close : menu} 
 				alt="menu"
 				className='w-[28px] h-[28px] object-contain mr-4' 
-				onClick={() => setToggle((prev) => !prev)}
+				onClick={() =>{toggle ? enableBodyScroll(body.current) : disableBodyScroll(body.current);setToggle((prev) => !prev);}}
 			/>
 
 			<div
@@ -41,7 +42,7 @@ const Navbar = ({toggle,setToggle}) => {
 					{navLinks.map((nav, index) => (
 						<li
 							key={nav.id}
-							className={`font-noto cursor-pointer text-[16px] font-bold ${index === navLinks.length - 1 ? `mb-0 `: `mb-6`} text-gray-700 hover:underline hover:underline-offset-4 decoration-emerald-400 decoration-2
+							className={`font-noto cursor-pointer text-[16px] font-bold ${index === navLinks.length - 1 ? `mb-0 `: `mb-6`} text-gray-700 hover:underline focus:underline hover:underline-offset-4 decoration-emerald-400 decoration-2
 							`}
 						>
 							<a href={`#${nav.id}`}>

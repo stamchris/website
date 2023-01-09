@@ -3,7 +3,7 @@ import { productItems} from '../constants'
 
 const Illustration = ({toggle,setToggle}) =>(
 
-        <section id='product' className={`flex flex-col w-full md:h-[600px] justify-center items-center md:flex-row ${toggle ? 'blur-sm' : 'blur-none'}`}>
+        <section id='product' className={`flex flex-col w-full md:h-[600px] justify-center items-center md:flex-row `}>
 
             {productItems.map((item,index) =>(
                 <div className='flex-1 flex flex-col p-4 w-full h-[500px] bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50 m-2 justify-start items-center drop-shadow-sm rounded-lg ' key={index}>
