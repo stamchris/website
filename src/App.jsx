@@ -2,8 +2,7 @@ import React from 'react'
 import styles from './style';
 import {useState,useRef} from 'react'
 
-import { Navbar,Hero,Illustration,Faq } from './components';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { Navbar,Hero,Illustration,Faq, Footer } from './components';
 
 const App = () => {
 
@@ -37,6 +36,12 @@ const App = () => {
 			<div className={`${styles.flexStart} ${toggle ? 'blur-sm' : 'blur-none'}`}>
 				<div className={`${styles.boxWidth}`}>
 					<Faq/>
+				</div>
+			</div>
+
+			<div className={`${styles.flexStart} ${toggle ? 'blur-sm' : 'blur-none'}`}>
+				<div className={`${styles.boxWidth}`}>
+					<Footer/>
 				</div>
 			</div>
 
