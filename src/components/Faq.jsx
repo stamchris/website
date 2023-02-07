@@ -40,7 +40,7 @@ const Faq = () => {
                             
                         </div>
 
-                        <div className={`${item.active ? 'block' : 'hidden'} justify-center items-center flex-1 h-24 w-fit ml-4 bg-gray-50 p-4 m-1 rounded border-l-8 border-emerald-400 text-sm md:text-base text-gray-800 bg-white drop-shadow-md`}>
+                        <div className={`${item.active ? 'block' : 'hidden'} justify-center items-center flex-1 h-24 w-fit ml-4 bg-white p-4 m-1 rounded border-l-8 border-emerald-400 text-sm md:text-base text-gray-800 bg-white drop-shadow-md`}>
                             {item.answer}
                         </div>
                     </div>

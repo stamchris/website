@@ -10,7 +10,7 @@ const Hero = ({toggle,setToggle}) => {
 			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50  rounded:lg  sm:rounded-md relative z-30`}>
 
 				<div
-                    className='absolute h-full w-full top-0 left-0 opacity-40 bg-white z-20'>
+                    className='absolute h-full w-full top-0 left-30 opacity-40 bg-white z-20'>
                 </div>
 				<div className={`flex-1 flex-col z-30`}>
 					<div className='md:h-[130px]'>
