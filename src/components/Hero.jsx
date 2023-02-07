@@ -7,9 +7,12 @@ const Hero = ({toggle,setToggle}) => {
 
 	return (
 		<section id='home' className={`${styles.marginYHero}`}>
-			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50  rounded:lg  sm:rounded-md`}>
+			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50  rounded:lg  sm:rounded-md relative z-30`}>
 
-				<div className={`flex-1 flex-col`}>
+				<div
+                    className='absolute h-full w-full top-0 left-0 opacity-40 bg-white z-20'>
+                </div>
+				<div className={`flex-1 flex-col z-30`}>
 					<div className='md:h-[130px]'>
 						<h1 className=' font-noto font-semibold leading-tight md:leading-11 tracking-wide text-3xl text-gray-800 md:text-5xl text-center sm:text-left md:h-full
 						'>Η εφαρμογή για να βρίσκεις ματς 5x5
@@ -42,7 +45,7 @@ const Hero = ({toggle,setToggle}) => {
 					</div>
 				</div>
 
-				<div className='py-12 sm:py-2 md:py-0 sm:ml-10 md:ml-20'>
+				<div className='py-12 sm:py-2 md:py-0 sm:ml-10 md:ml-20 z-30'>
 						<ImageSlider/>
 				</div>
 			</div>
