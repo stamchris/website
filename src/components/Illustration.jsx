@@ -1,7 +1,7 @@
 import styles from '../style';
 import { productItems} from '../constants'
 
-const Illustration = ({toggle,setToggle}) =>(
+const Illustration = () =>(
 
         <section id='product' className={`flex flex-col w-full md:h-[600px] justify-center items-center md:flex-row `}>
 

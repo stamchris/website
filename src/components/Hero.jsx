@@ -3,7 +3,7 @@ import styles from '../style';
 import {google,apple} from '../assets';
 import ImageSlider from './ImageSlider';
 
-const Hero = ({toggle,setToggle}) => {
+const Hero = () => {
 
 	return (
 		<section id='home' className={`${styles.marginYHero}`}>

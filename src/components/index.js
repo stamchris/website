@@ -9,5 +9,5 @@ export {
     Hero,
     Illustration,
     Faq,
-    Footer
+    Footer,
 };
