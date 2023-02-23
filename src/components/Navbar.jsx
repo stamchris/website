@@ -1,8 +1,8 @@
 import {useState} from 'react'
-
 import {logo,close,menu,black_logo} from '../assets'
 import { navLinks } from '../constants';
 import styles from '../style'
+import {Link} from 'react-router-dom'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
@@ -15,7 +15,9 @@ const Navbar = ({toggle,setToggle,body}) => {
 
   return (
 	<nav className='h-[70px] sm:h-[100px] w-full flex py-2 justify-between items-center navbar bg-gradient-to-b from-gray-50 to-white border-b-2'>
-		<img src={black_logo} alt="Company Logo" className='w-[60px] h-[50px] sm:w-[100px] sm:h-[90px] rounded m-2 '/>
+		<Link to="/terms">
+			<img src={black_logo} alt="Company Logo" className='w-[60px] h-[50px] sm:w-[100px] sm:h-[90px] rounded m-2 cursor-pointer'/>
+		</Link>
 		<h4 className='text-[15px] sm:text-[20px] text-zinc-700 font-semibold'>Meet N Kick</h4>
 
 		<ul className={`list-none hidden md:flex justify-end items-center flex-1 gap-6 `}>
