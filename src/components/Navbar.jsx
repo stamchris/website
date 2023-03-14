@@ -14,7 +14,7 @@ const Navbar = ({toggle,setToggle,body}) => {
 
 
   return (
-	<nav className='h-[70px] sm:h-[100px] w-full flex py-2 justify-between items-center navbar bg-gradient-to-b from-gray-50 to-white border-b-2'>
+	<nav className='h-[70px] sm:h-[100px] w-full flex justify-between items-center navbar bg-gradient-to-b from-gray-50 to-white border-b-2'>
 		<Link to="/terms">
 			<img src={logo} alt="Company Logo" className='w-[60px] h-[50px] sm:w-[100px] sm:h-[90px] rounded m-2 cursor-pointer'/>
 		</Link>
