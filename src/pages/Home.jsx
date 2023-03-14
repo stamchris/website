@@ -13,7 +13,7 @@ const Home = () => {
 
 	return (
 		
-			<div ref={bodyRef} className={`w-full bg-slate-100 `}>
+			<div ref={bodyRef} className={`w-full bg-slate-50`}>
 
 				<div className={`${styles.flexCenter} bg-slate-50 rounded `}>
 					<div className={`${styles.boxWidth} `}>

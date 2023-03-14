@@ -14,7 +14,7 @@ const styles = {
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-6 my-6",
-    marginYHero: "sm:mb-6 mb-6",
+    marginYHero: "",
 
     hoverText : "transitio-all duration-900 ease-in hover:underline hover:underline-offset-4 ",
 
