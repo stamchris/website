@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from '../style';
-import {google,apple} from '../assets';
+import {google1,apple1,hero1_img} from '../assets';
 import ImageSlider from './ImageSlider';
 
 const Hero = () => {
 
 	return (
 		<section id='home' className={`${styles.marginYHero}`}>
-			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50  rounded:lg  sm:rounded-md relative z-30`}>
+			<div className={`${styles.paddingX} ${styles.paddingY} ${styles.flexCenter} w-full flex-col sm:flex-row bg-white rounded:lg  sm:rounded-md relative z-30`}>
 
 				<div
                     className='absolute h-full w-full top-0 left-30 opacity-40 bg-white z-20'>
@@ -35,19 +35,19 @@ const Hero = () => {
 					</div>
 					<div className='flex flex-row pt-8 px-4 gap-20 justify-center items-center h-30 sm:justify-start'>
 						<a href='https://play.google.com/store/apps/details?id=meet.n.kick'>
-							<img src={google} alt="android store" className='h-[80px] w-[80px]'
+							<img src={google1} alt="android store" className='h-[50px] w-[50px]'
 							/>
 						</a>
 						<a href='https://apps.apple.com/gr/app/meet-n-kick/id6444569617'>
-							<img src={apple} alt="appstore" className='h-[80px] w-[80px]'/>
+							<img src={apple1} alt="appstore" className='h-[50px] w-[50px]'/>
 						</a>
-						
 					</div>
 				</div>
 
-				<div className='py-12 sm:py-2 md:py-0 sm:ml-10 md:ml-20 z-30'>
-						<ImageSlider/>
-				</div>
+					<div className='absolute z-20 invisible sm:visible right-[20px] bottom-[-30px] md:bottom-0 md:right-0'>
+						<img src={hero1_img} alt="football image" className='h-[300px] w-[300px] md:h-[400px] md:w-[390px] '/>
+					</div>
+				
 			</div>
 		</section>
 	)
