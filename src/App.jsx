@@ -5,7 +5,7 @@ import { Home,Terms,Policy,AboutUs} from './pages';
 const App = () => 
 		 (
 				<Routes>
-					<Route exact path="website/" element={<Home/>} />
+					<Route exact path="/" element={<Home/>} />
 					<Route path="website/aboutUs" element={<AboutUs/>} />
 					<Route path="website/terms" element={<Terms/>} />
 					<Route path="website/policy" element={<Policy/>} />
