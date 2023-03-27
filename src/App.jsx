@@ -5,10 +5,10 @@ import { Home,Terms,Policy,AboutUs} from './pages';
 const App = () => 
 		 (
 				<Routes>
-					<Route exact path="http://meetnkick.com/" element={<Home/>} />
-					<Route path="http://meetnkick.com/aboutUs" element={<AboutUs/>} />
-					<Route path="http://meetnkick.com/terms" element={<Terms/>} />
-					<Route path="http://meetnkick.com/policy" element={<Policy/>} />
+					<Route exact path="/" element={<Home/>} />
+					<Route path="/aboutUs" element={<AboutUs/>} />
+					<Route path="/terms" element={<Terms/>} />
+					<Route path="/policy" element={<Policy/>} />
 				</Routes> 	
 		)
 

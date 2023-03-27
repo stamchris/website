@@ -42,12 +42,12 @@ const Footer = () => {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Πολιτικη</h2>
                 <ul className="text-gray-600 ">
                     <li className="mb-4">
-                        <Link to="website/policy">
+                        <Link to="/policy">
                             <span className="hover:underline">Privacy Policy</span>
                         </Link> 
                     </li>
                     <li>
-                        <Link to="website/terms">
+                        <Link to="/terms">
                             <span className="hover:underline">Terms &amp; Conditions</span>
                         </Link>
                     </li>
