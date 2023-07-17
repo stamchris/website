@@ -15,10 +15,12 @@ import hero_img from "./hero.jpg"
 import hero1_img from "./hero1.png"
 import google1 from "./google.png"
 import apple1 from "./app-store-2.png"
+import new_logo from "./720X1280.png"
 
 
 
 export {
+    new_logo,
     logo,
     black_logo,
     close,

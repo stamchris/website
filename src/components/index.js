@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Illustration from "./Illustration"
 import Faq from "./Faq"
 import Footer from "./Footer"
+import CloseButton from "./CloseButton";
 
 export {
     Navbar,
@@ -10,4 +11,5 @@ export {
     Illustration,
     Faq,
     Footer,
+    CloseButton,
 };
