@@ -1,5 +1,3 @@
-import logo from "./logo.png";
-import black_logo from "./logo.jpg";
 import close from "./close.png";
 import menu  from "./menu.png"; 
 import foot1 from "./football1.jpg";
@@ -15,14 +13,13 @@ import hero_img from "./hero.jpg"
 import hero1_img from "./hero1.png"
 import google1 from "./google.png"
 import apple1 from "./app-store-2.png"
-import new_logo from "./720x1280.png"
+import new_logo from "./1280x720.jpg"
+import app_screen from "./app_screen.png"
 
 
 
 export {
     new_logo,
-    logo,
-    black_logo,
     close,
     menu,
     foot1,
@@ -38,4 +35,5 @@ export {
     hero1_img,
     google1,
     apple1,
+    app_screen,
 };

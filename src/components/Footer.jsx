@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {logo} from "../assets";
+import {new_logo} from "../assets";
 
 
 
@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
             <a href="" className="flex justify-center ss:justify-start items-center">
-                <img src={logo} className="h-14 md:mr-3" alt="FlowBite Logo" />
+                <img src={new_logo} className="h-14 md:mr-3" alt="FlowBite Logo" />
                 <span className="text-2xl font-semibold whitespace-nowrap ">Meet N Kick</span>
             </a>
         </div>
